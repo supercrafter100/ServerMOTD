@@ -1,0 +1,16 @@
+messages:
+  no_permission: "&cYou do not have the required permission to do this!"
+  usage: "&cUsage: /setmotd <line> <message>"
+
+
+  invalid_line: "&cThe line number provided is invalid!"
+  only_2_line: "&cThere are only 2 lines in the motd!"
+  successfully_changed: "&aChanged the new motd on line {line} to {motd}"
+
+
+main:
+  permission: "motd.command"
+
+motd:
+  - "&6&lSupercrafter100"
+  - "&cHis testing server"

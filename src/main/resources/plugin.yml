@@ -1,0 +1,10 @@
+name: ServerMOTD
+version: ${project.version}
+main: com.supercrafter100.servermotd.Main
+load: STARTUP
+authors: [Supercrafter100]
+description: A plugin to manage your server MOTD
+commands:
+  setmotd:
+    description: "Set the motd of the server"
+    usage: "/setmotd <line> <motd>"
