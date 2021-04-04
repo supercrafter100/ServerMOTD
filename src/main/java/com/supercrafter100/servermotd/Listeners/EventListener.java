@@ -19,14 +19,6 @@ public class EventListener implements Listener {
     @EventHandler
     public void serverPing(ServerListPingEvent e) {
         List<String> motd = plugin.getConfig().getStringList("motd");
-
-        for (int i = 0; i < motd.size(); i++) {
-            motd.set(i, format(motd.get(i)));
-        }
-        e.setMotd(String.join("\n", motd));
-    }
-
-    private String format(String text) {
-        return ChatColor.translateAlternateColorCodes('&', text);
+        e.setMotd(ChatColor.translateAlternateColorCodes('&', String.join("\n", motd)));
     }
 }
